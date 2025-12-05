@@ -1,0 +1,87 @@
+@import url("https://use.typekit.net/jjt8tot.css");
+
+:root {
+  --white: #FFFFFF;
+  --orange: #F3722C;
+  --brown: #351303;
+}
+
+body {
+    font-family: "omnes-pro", sans-serif;
+    background-color: #FAF3DD;
+    margin: 0;
+    background-image: url(/Assets/background-circles.svg);
+    background-size: cover;
+    background-position-y: -2.5%;
+}
+
+header {
+    height: 100vh;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav span a {
+    color: var(--orange);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brown);
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+nav div a img {
+    width: 81px;
+}
+
+.links {
+    font-size: 1.375em;
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    font-weight: 700;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    color: var(--orange);
+}
+
+header p {
+    font-weight: 400;
+    font-size: 2.25em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.join-now-btn a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5em;
+    
+    background-color: var(--brown);
+    padding: 25px 130px;
+    border-radius: 30px;
+}
+
+.join-now-btn {
+    margin-top: 8%;
+    text-align: center;
+}
