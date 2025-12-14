@@ -51,6 +51,14 @@ nav div a img {
     width: 81px;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    width: 24px;
+}
+
 .links {
     font-size: 1.375em;
     display: flex;
@@ -63,7 +71,7 @@ nav div a img {
 
 h1 {
     font-weight: 700;
-    font-size: 5em;
+    font-size: 5rem;
     text-align: center;
     color: var(--orange);
     position: relative;
@@ -71,15 +79,28 @@ h1 {
     margin-top: 10%;
 }
 
-h1 span{
+h1 span {
     position: absolute;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: transparent;
     -webkit-text-stroke: 1px var(--orange);
+
     left: 50%;
-    transform: translate(-50%);
-    top: -43%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+
     font-size: 6rem;
+    width: 100%;
+}
+
+.maskotte img {
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 2%;
 }
 
 header p {
@@ -138,10 +159,6 @@ h2 {
     justify-content: space-between;
     margin-left: 5%;
     margin-top: 20%;
-}
-
-#how-does-work img {
-    width: 150%;
 }
 
 #how-does-work p {
@@ -207,8 +224,8 @@ h2 {
     border-radius: 30px;
 
     max-width: 300px;
-    max-height: 355px;
-    
+    height: 355px;
+
     padding: 20px 10px;
 }
 
@@ -234,14 +251,13 @@ h2 {
     font-size: 1.25em;
 
     color: var(--white);
-
     background-color: var(--red);
     padding: 10px 50px;
     border-radius: 30px;
 
     max-width: 80%;
-    margin-top: 5%;
 
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -320,6 +336,8 @@ h2 {
 
 .txt-fields .submit-btn {
     margin-top: 5%;
+
+    opacity: 100%;
 
     color: var(--white);
     font-size: 2.25em;
@@ -431,4 +449,382 @@ h2 {
     padding: 1px;
     font-size: 1.5em;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(/Assets/circles-tablet.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 9.8%;
+    }
+
+    .maskotte {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h1 span {
+        font-size: 5rem;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    #who-are-we p {
+        font-size: 1.5em;
+    }
+
+    #how-does-work p {
+        font-size: 1.5em;
+    }
+
+    #how-does-work img {
+        width: 200%;
+        margin-left: -20%;
+    }
+
+    #our-first-event {
+        margin-top: 20%;
+    }
+
+    #our-first-event p {
+        font-size: 1.5em;
+    }
+
+    #our-first-event .section2 {
+        margin-top: 70%;
+    }
+
+    #our-first-event .section2 h2 {
+        width: 130%;
+    }
+
+    #our-first-event .section2 .line {
+        width: 115%;
+    }
+
+    #our-first-event .section2 p {
+        width: 115%;
+    }
+
+    #our-first-event .section1 .line {
+        width: 135%;
+    }
+
+    #our-first-event .section1 p {
+        width: 135%;
+    }
+
+    #our-first-event img {
+        height: 100%;
+        width: 60%;
+        margin-top: 0%;
+        position: relative;
+    }
+
+    #merch {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .merch-title {
+        margin-top: 10%;
+    }
+
+    #how-to-member .line {
+        max-width: 95%;
+    }
+
+    #how-to-member p {
+        font-size: 1.5em;
+        max-width: 98%;
+    }
+
+    #join-form img {
+        height: 100%;
+        width: 60%;
+        margin-top: -20%;
+        margin-left: -5%;
+    }
+
+    .name input {
+        width: 130px;
+    }
+
+    .txt-fields label {
+        font-size: 1.5em;
+    }
+
+    #join-form {
+        margin-bottom: 2%;
+    }
+
+    #stickers h2 {
+        font-size: 2.25em;
+    }
+
+    #stickers p {
+        font-size: 1.5em;
+    }
+    
+    .stickers-btn img {
+        width: 100%;
+    }
+
+    #stickers .stickers-btn a {
+        padding: 10px 100px;
+    }
+
+    #stickers {
+        height: 270px;
+    }
+
+    .footer {
+        padding: 2% 2%;
+    }
+
+    .footer h2 {
+        font-size: 2.25em;
+    }
+
+    .footer-links {
+        margin-left: -45%;
+    }
+
+    .outro p {
+        width: 40%;
+    }
+
+    .outro a {
+    margin-left: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .links a {
+        display: none;
+    }
+
+    .links .join {
+        display: inline;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+    }
+
+    nav div a img {
+        width: 43px;
+    }
+
+    body {
+        background-image: url(/Assets/circles-phone.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 9.8%;
+    }
+
+    .maskotte {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin-top: 20%;
+    }
+
+    h1 span {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.25em;
+        margin-bottom: 30%;
+        margin-top: 30%;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 2.25em;
+    }
+
+    #who-are-we p {
+        font-size: 1.25em;
+    }
+
+    #how-does-work {
+        margin-left: 4%;
+    }
+
+    #how-does-work .information {
+        margin-left: 0%;
+    }
+
+    #how-does-work p {
+        font-size: 1.25em;
+    }
+
+    
+    #how-does-work img {
+        display: none;
+    }
+
+    #how-does-work img {
+        width: 200%;
+        margin-left: -20%;
+    }
+
+    #our-first-event {
+        margin-top: 20%;
+    }
+
+    #our-first-event p {
+        font-size: 1.25em;
+    }
+
+    #our-first-event .section2 {
+        margin-top: 30%;
+    }
+
+    #our-first-event .section2 h2 {
+        width: 80%;
+    }
+
+    #our-first-event .section2 .line {
+        width: 80%;
+    }
+
+    #our-first-event .section2 p {
+        width: 72%;
+    }
+
+    #our-first-event .section1 .line {
+        width: 90%;
+    }
+
+    #our-first-event .section1 p {
+        width: 90%;
+    }
+
+    #our-first-event img {
+        display: none;
+    }
+
+    #merch {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .merch-title {
+        margin-top: 10%;
+    }
+
+    #how-to-member .line {
+        max-width: 95%;
+    }
+
+    #how-to-member p {
+        font-size: 1.25em;
+        max-width: 95%;
+    }
+
+    #join-form {
+        justify-content: center;
+
+        align-items: center;
+
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .txt-fields input {
+        margin-top: 2%;
+    }
+
+    #join-form img {
+        display: none;
+    }
+
+    .name input {
+        width: 170px;
+    }
+
+    .txt-fields label {
+        font-size: 1.25em;
+        margin-top: 10%;
+    }
+
+    #join-form {
+        margin-bottom: 2%;
+    }
+
+    #stickers h2 {
+        width: 90%;
+        font-size: 1.5em;
+    }
+
+    #stickers p {
+        font-size: 1.25em;
+        margin: 0;
+        margin-left: 2%;
+    }
+    
+    .stickers-btn img {
+        width: 100%;
+    }
+
+    #stickers .stickers-btn a {
+        padding: 10px 100px;
+    }
+
+    #stickers {
+        height: 380px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 2% 2%;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer h2 {
+        font-size: 2.25em;
+    }
+
+    .footer-links {
+        margin-left: -45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .outro p {
+        width: 100%;
+    }
+
+    .outro a {
+    margin-left: 5%;
+    }
+
+    .copyright {
+        font-size: 1.5em;
+    }
 }
