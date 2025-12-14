@@ -451,6 +451,13 @@ h2 {
     text-align: center;
 }
 
+@media (max-width: 1240px) {
+    .maskotte img {
+        top: -100%;
+        left: 0%;
+    }
+}
+
 @media (max-width: 800px) {
     body {
         background-image: url(/Assets/circles-tablet.svg);
