@@ -17,7 +17,7 @@ body {
     font-family: "omnes-semicond", sans-serif;
     background-color: #FAF3DD;
     margin: 0;
-    background-image: url(/Assets/background-circles.svg);
+    background-image: url(/Assets/circles-desktop.svg);
     background-size: cover;
     background-position-y: -2.5%;
 }
